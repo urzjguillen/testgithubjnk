@@ -7,8 +7,7 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-                sh '''sshpass root@10.1.10.141 -p 'Virtualdv2025'
-                    exit
+                sh '''git clone git@github.com:urzjguillen/testgithubjnk.git && ls testgithubjnk && rm testgithubjnk
                 '''
             }
         }
