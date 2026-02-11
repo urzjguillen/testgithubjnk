@@ -1,0 +1,16 @@
+pipeline{
+    agent{
+        node{
+            label 'agent001'
+        }
+    }
+    stages{
+        stage('Test'){
+            steps{
+                sh '''sshpass root@10.1.10.141 -p 'Virtualdv2025'
+                    exit
+                '''
+            }
+        }
+    }
+}
