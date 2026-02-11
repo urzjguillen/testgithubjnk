@@ -13,6 +13,7 @@ pipeline{
         stage('Test'){
             steps{
                 sh 'ls -l'
+                sh 'git log -1 --pretty=%B'
             }
         }
     }
