@@ -5,6 +5,11 @@ pipeline{
         }
     }
     stages{
+        stage('checkout scm'){
+            steps{
+                sh 'checkout scm'
+            }
+        }
         stage('Test'){
             steps{
                 sh '''git clone git@github.com:urzjguillen/testgithubjnk.git && ls testgithubjnk && rm testgithubjnk'''
