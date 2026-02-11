@@ -12,7 +12,7 @@ pipeline{
         }
         stage('Test'){
             steps{
-                sh 'git clone git@github.com:urzjguillen/testgithubjnk.git'
+                sh 'ls -l'
             }
         }
     }
